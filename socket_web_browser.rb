@@ -5,7 +5,7 @@ port = 80                           # Default HTTP port
 path = "/index.htm"                 # The file we want 
 
 # This is the HTTP request we send to fetch a file
-request = "GET #{path} HTTP/1.0\r\n\r\n"
+request = "GET #{path} HTTP/1.0\r\nHost: #{host}\r\n\r\n"
 
 puts "---"
 puts request
